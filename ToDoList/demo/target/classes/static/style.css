@@ -1,0 +1,84 @@
+/* --- Estilos Generales --- */
+body {
+    background-color: #f4f7f6; /* Un gris muy claro de fondo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+}
+
+/* --- Contenedor Principal --- */
+.container-custom {
+    max-width: 600px; /* Centra y limita el ancho */
+    margin: 50px auto; /* Centrado vertical y horizontal */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* --- Título --- */
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Formulario de Entrada --- */
+.input-group {
+    border-radius: 30px; /* Bordes muy redondeados */
+    overflow: hidden; /* Para que el input y botón sigan la curva */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.input-group .form-control {
+    border: 1px solid #e0e0e0;
+    padding: 12px 20px;
+    font-size: 1rem;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+.input-group .btn-primary {
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+/* --- Separador Línea --- */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+/* --- Tarjetas de Ítems --- */
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre tarjetas */
+}
+
+.item-card {
+    background-color: #fbfcfc;
+    border: 1px solid #edf2f4;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Texto a la izq, badge a la der */
+    align-items: center;
+    transition: all 0.2s ease-in-out; /* Animación al pasar el mouse */
+}
+
+.item-card:hover {
+    transform: translateY(-3px); /* Se eleva un poco */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+
+/* --- Badge (Etiqueta "Activo") --- */
+.badge {
+    font-weight: 500;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+}
